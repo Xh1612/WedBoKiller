@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+body{
+    background: url("https://th.bing.com/th/id/OIG3.F1xIAB4XSN2yTSQgj10U?pid=ImgGn") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: 'Lacquer', cursive;
+    font-family: 15px;
+}
+header{
+    
+    width: 1300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+header .logo img{
+    height: 40px;
+}
+header nav{
+    width: 80%;
+}
+header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li{
+    padding: 0 30px;
+    color: #fff;
+}
+.banner{
+    margin-top: -50px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: brightness(0.4);
+}
+.content{
+    text-align: center;
+    color: red;
+    text-shadow: 0 10px 50px #630707;
+}
+h1{
+    margin: 0;
+    font-size: 6em;
+    animation: animationBlur 5s linear infinite;
+}
+
+h1 a{
+    color: red;
+    text-decoration: none;
+}
+
+h1 a:hover{
+    text-decoration: underline;
+}
+
+@keyframes animationBlur{
+    0%{
+        filter: blur(0);
+    }80%{
+        filter: blur(0);
+    }
+    90%{
+        filter: blur(5px);
+    }100%{
+        filter: blur(0);
+    }
+}
+.des{
+    rotate: -5deg;
+    text-align: left;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for video */
+}
+
+.video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #333; /* Change the color and thickness as desired */
+}
